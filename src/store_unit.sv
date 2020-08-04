@@ -33,8 +33,6 @@ module store_unit
 
 enum logic {IDLE, WRITE} CS, NS;
 
-
-logic [31:0]        wb_adr_o;  // address out
 logic               wb_ack_i;  // acknowledge from slave
 logic               wb_cyc_o;  // transaction cycle in progress
 logic [3:0]         wb_sel_o;  // select where the data on the data bus (8-bit granularity assumed)

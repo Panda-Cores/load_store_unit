@@ -76,6 +76,18 @@ begin
     wb_bus.wb_stb  = 'b0;
     wb_bus.wb_we   = 'b0;
     wb_bus.wb_lock = 'b0;
+    lu_wb_bus.wb_dat_sm = 'b0;
+    lu_wb_bus.wb_tgd_sm = 'b0;
+    lu_wb_bus.wb_ack    = 'b0;
+    lu_wb_bus.wb_err    = 'b0;
+    lu_wb_bus.wb_rty    = 'b0;
+    lu_wb_bus.wb_gnt    = 'b0;
+    su_wb_bus.wb_dat_sm = 'b0;
+    su_wb_bus.wb_tgd_sm = 'b0;
+    su_wb_bus.wb_ack    = 'b0;
+    su_wb_bus.wb_err    = 'b0;
+    su_wb_bus.wb_rty    = 'b0;
+    su_wb_bus.wb_gnt    = 'b0;
 
     if(read_i) begin
         wb_bus.wb_dat_ms  = lu_wb_bus.wb_dat_ms;
