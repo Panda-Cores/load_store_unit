@@ -68,7 +68,6 @@ begin
     valid_o = 1'b0;
     wb_stb_o = 1'b0;
     wb_sel_o = 4'b0;
-    data_o   = 'b0;
 
     case(CS)
         IDLE: begin
